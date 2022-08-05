@@ -1,0 +1,47 @@
+@import url('https://fonts.googleapis.com/css2?family=Bungee+Shade&family=Roboto+Mono:wght@300&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.header{
+    display: flex;
+    justify-content: center;
+    margin: 1.5%;
+}
+
+.header h1{
+    font-family: 'Bungee Shade', cursive;
+    font-size: 5rem;
+}
+
+.box{
+    width: calc(100vw - 10rem);
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    flex-direction: column;
+    gap: 15px;
+    box-shadow: inset 0px 1px 4px 0 rgba(0, 0, 0, 0.8);
+    padding: 2%;
+}
+
+.box .row{
+    display: flex;
+    gap: 15px;
+}
+
+.row .btn{
+    width: calc(100% / 3);
+    height: 160px;
+    border-radius: 16px;
+}
+
+.row .btn:hover{
+    cursor: pointer;
+    background-color:cadetblue;
+}
