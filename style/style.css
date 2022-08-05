@@ -38,10 +38,36 @@
 .row .btn{
     width: calc(100% / 3);
     height: 160px;
-    border-radius: 16px;
+    border-radius: 1.5rem;
+    border: 1 solid #aaa;
 }
 
 .row .btn:hover{
     cursor: pointer;
     background-color:cadetblue;
+}
+
+.result{
+    text-align: center;
+}
+
+.reset{
+    text-align: center;
+    margin: 10px 0 ;
+}
+
+#reset{
+    cursor: pointer;
+    color:black;
+    background: #aaa;
+    border-radius: 0.5rem;
+    padding: 5px 10px;
+    font-size: 1.2rem;
+    margin: 7px 0;
+    transition: all 0.8s ease-in-out;
+}
+
+#reset:hover{
+    color:#fff;
+    background: #000;
 }
