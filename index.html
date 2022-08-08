@@ -8,32 +8,34 @@
     <link rel="stylesheet" href="./style/style.css">
 </head>
 <body>
-    <header class="header">
-        <h1>Triki Game</h1>
-    </header>
-    <main>
-        <section class="box">
-            <section class="row">
-                <input type="text" class="btn" readonly>
-                <input type="text" class="btn" readonly>
-                <input type="text" class="btn" readonly>
+    <div class="container">
+        <header class="header">
+            <h1>Triki Game</h1>
+        </header>
+        <main>
+            <section class="box">
+                <section class="row">
+                    <input type="text" class="btn" readonly>
+                    <input type="text" class="btn" readonly>
+                    <input type="text" class="btn" readonly>
+                </section>
+                <section class="row">
+                    <input type="text" class="btn" readonly>
+                    <input type="text" class="btn" readonly>
+                    <input type="text" class="btn" readonly>
+                </section>
+                <section class="row">
+                    <input type="text" class="btn" readonly>
+                    <input type="text" class="btn" readonly>
+                    <input type="text" class="btn" readonly>
+                </section>
             </section>
-            <section class="row">
-                <input type="text" class="btn" readonly>
-                <input type="text" class="btn" readonly>
-                <input type="text" class="btn" readonly>
+            <p class="result">Player X Turn</p>
+            <section class="reset">
+                <button id="reset">Reset</button>
             </section>
-            <section class="row">
-                <input type="text" class="btn" readonly>
-                <input type="text" class="btn" readonly>
-                <input type="text" class="btn" readonly>
-            </section>
-        </section>
-        <p class="result">Player X Turn</p>
-        <section class="reset">
-            <button id="reset">Reset</button>
-        </section>
-    </main>
+        </main>
+    </div>
 
     <script src="./scripts/app.js"></script>
 </body>
