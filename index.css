@@ -1,27 +1,31 @@
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Press+Start+2P&family=Roboto+Mono:wght@600&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Bungee+Shade&family=Roboto+Mono:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bungee+Shade&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap");
 @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@600&display=swap');
 
-*{
-    margin: 0%;
-    padding: 0%;
+/* Resetear margenes y padding por defecto */
+body {
+  margin: 0;
+  padding: 0;
 }
 
+/* Definicion de estilos para el contenedor */
 .container {
-    width: 100vw;
-    height: 100vh;
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
+  height: 100vh;
+  width: 100vw;
 }
 
+/* Definicion de estilos para el titulo */
 .container h1 {
   font-family: "Bungee Shade", cursive;
   font-size: 60px;
   margin: 0;
 }
 
+/* Definicion de estilos para el contenedor de cuadros */
 .box {
   display: grid;
   grid-template-areas:
@@ -35,6 +39,7 @@
   width: 305px;
 }
 
+/* Definicion de estilos para cada cuadro */
 .box div {
   height: 100px;
   width: 100px;
@@ -47,12 +52,14 @@
   border: 1.5px solid black;
 }
 
-.container p{
-    font-family: 'Orbitron', sans-serif;
-    font-size: 40px;
-    margin: 40px 0 0 0;
+/* Definicion de estilos para el texto */
+.container p {
+  font-family: 'Orbitron', sans-serif;
+  font-size: 40px;
+  margin: 40px 0 0 0;
 }
 
+/* Definicion de estilos para el boton */
 .container button {
   width: 140px;
   height: 40px;
@@ -64,26 +71,36 @@
   background: #fff;
 }
 
+/* Media queries para dispositivos con un ancho maximo de 540px */
+
 @media only screen and (max-width:540px) {
-	.container h1{
-        font-size: 40px;
-        text-align: center;
+    /* Redimensionamiento del título */
+    .container h1 {
+    font-size: 40px;
+    text-align: center;
     }
-
-    .box{
-        width: 245px;
+    
+    /* Redimensionamiento del contenedor de cuadros */
+    .box {
+    width: 245px;
     }
-
-    .box div{
-        height: 80px;
-        width: 80px;
-        font-size: 30px;
+    
+    /* Redimensionamiento de las cajas */
+    .box div {
+    height: 80px;
+    width: 80px;
+    font-size: 30px;
     }
-
-    .container button{
-        width: 120px;
-        height: 40px;
-        font-size: 16px;
-        margin: 40px;
+    
+    /* Redimensionamiento del botón */
+    .container button {
+    width: 120px;
+    height: 40px;
+    font-size: 16px;
+    margin: 40px;
     }
-}
+    }
+    
+    
+    
+    
